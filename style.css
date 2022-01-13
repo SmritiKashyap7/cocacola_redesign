@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+#main {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#left {
+  position: absolute;
+  min-height: 100vh;
+  width: 50%;
+  background-color: #cddfe9;
+}
+#text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 60%;
+  font-size: 15px;
+  line-height: 22px;
+}
+#text p {
+  margin-bottom: 30px;
+}
+#text button {
+  padding: 10px 30px;
+  background: linear-gradient(to bottom right, #ea5c65, #ce0b10);
+  border: transparent;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  color: #cddfe9;
+  box-shadow: 0px 0px 4px 2px #ce0b10;
+}
+#left #hd {
+  height: 180px;
+}
+#image {
+  position: absolute;
+  top: 20%;
+  right: -20%;
+
+  height: 60%;
+  width: 40%;
+  background-image: url(https://i.ibb.co/gzRcxGh/Nice-Png-coca-cola-png-208521.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 99;
+}
+#right {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  min-height: 100vh;
+  width: 50%;
+  background-color: #d21b27;
+}
+#facts {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  /* background-color: black; */
+  width: 50%;
+}
+#facts > h3 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #cddfe9;
+}
+#line {
+  /* position: absolute;
+  top: 20%;
+  left: 0%; */
+  margin-top: 40px;
+  height: 2.5px;
+  width: 240px;
+  background-color: #cddfe9c5;
+  margin-top: 5px;
+}
+#facts h5 {
+  margin-top: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.graph {
+  margin-top: 3px;
+  height: 7px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+#prcnt {
+  position: relative;
+  height: inherit;
+  width: 70%;
+  background-color: #5e070d;
+  border-radius: 10px;
+}
+#prcnt1 {
+  position: relative;
+  height: inherit;
+  width: 50%;
+  background-color: #5e070d;
+  border-radius: 10px;
+}
+#prcnt2 {
+  position: relative;
+  height: inherit;
+  width: 90%;
+  background-color: #5e070d;
+  border-radius: 10px;
+}
+#prcnt3 {
+  position: relative;
+  height: inherit;
+  width: 20%;
+  background-color: #5e070d;
+  border-radius: 10px;
+}
+#prcnt4 {
+  position: relative;
+  height: inherit;
+  width: 45%;
+  background-color: #5e070d;
+  border-radius: 10px;
+}
+
+.bar {
+  position: absolute;
+  left: 93%;
+  top: 12px;
+  height: 16px;
+  width: 28px;
+  background-color: #5e070d;
+  border-radius: 2px;
+}
+.bar > h6 {
+  color: wheat;
+  font-size: 12px;
+  padding: 4px;
+}
+.arrow {
+  height: 0;
+  width: 0;
+  margin-left: 10px;
+  margin-top: -26px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #5e070d;
+}
+#nav {
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  height: 50px;
+  width: 300px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav a {
+  color: black;
+  text-decoration: none;
+}
+#nav img {
+  height: 30px;
+}
+a#active {
+  color: #d21b27;
+  border-bottom: 2px solid #d21b27;
+}
+@media (max-width: 500px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+  #left {
+    width: 100%;
+  }
+}
